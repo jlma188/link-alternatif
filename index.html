@@ -69,6 +69,13 @@ body::before {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+/* Menambahkan animasi gerak halus */
+    animation: moveBackground 20s infinite alternate ease-in-out;
+}
+
+@keyframes moveBackground {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.1); } /* Gambar akan nge-zoom halus */
 }
 
 /* 3. Pastikan scrollbar hilang */
