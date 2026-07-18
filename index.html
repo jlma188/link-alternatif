@@ -34,7 +34,21 @@
 
   <style amp-custom>
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    
+    /* Tambahkan ini di dalam <style amp-custom> */
+html, body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
     :root {
       --primary: #D4AF37;
       --primary-dark: #D4AF37;
