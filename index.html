@@ -36,19 +36,22 @@
     * { box-sizing: border-box; margin: 0; padding: 0; }
     /* Tambahkan ini di dalam <style amp-custom> */
 html, body {
-    overflow-x: hidden;
     margin: 0;
     padding: 0;
     width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* Mencegah scrollbar horizontal */
+    overflow-y: hidden; /* Mencegah scrollbar vertikal */
 }
 
+/* Memastikan tidak ada sisa scrollbar di berbagai browser */
 body {
-    -ms-overflow-style: none;  /* IE dan Edge */
-    scrollbar-width: none;     /* Firefox */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 body::-webkit-scrollbar {
-    display: none;             /* Chrome, Safari, dan Opera */
+    display: none;
 }
     :root {
       --primary: #D4AF37;
