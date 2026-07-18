@@ -39,15 +39,16 @@ html, body {
     overflow-x: hidden;
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 
 body {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+    -ms-overflow-style: none;  /* IE dan Edge */
+    scrollbar-width: none;     /* Firefox */
 }
 
 body::-webkit-scrollbar {
-    display: none;
+    display: none;             /* Chrome, Safari, dan Opera */
 }
     :root {
       --primary: #D4AF37;
